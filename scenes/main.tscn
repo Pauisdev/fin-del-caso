@@ -2,6 +2,22 @@
 
 [ext_resource type="PackedScene" uid="uid://dk4u2h30u1a2" path="res://scenes/ui.tscn" id="1_o5qli"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5qli"]
+size = Vector2(50, 134)
+
 [node name="Main" type="Node2D" unique_id=85164264]
+
+[node name="DoorRight" type="Area2D" parent="." unique_id=1177026459]
+position = Vector2(651, 358)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorRight" unique_id=1369255729]
+position = Vector2(-3, 1)
+shape = SubResource("RectangleShape2D_o5qli")
+
+[node name="DoorLeft" type="Area2D" parent="." unique_id=722958975]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorLeft" unique_id=1137318290]
+position = Vector2(74, 568)
+polygon = PackedVector2Array(48, -164, -70, -124, -61, 195, -5, 170, 39, 127, 61, 83)
 
 [node name="Ui" parent="." unique_id=102675486 instance=ExtResource("1_o5qli")]

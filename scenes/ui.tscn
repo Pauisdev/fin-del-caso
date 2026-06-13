@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
+[ext_resource type="Script" uid="uid://ovmhyanr4444" path="res://scenes/ui.gd" id="1_gdt2y"]
 [ext_resource type="Texture2D" uid="uid://ck13825668h3p" path="res://rooms/main-room.png" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
+[ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
 
 [node name="Ui" type="CanvasLayer" unique_id=102675486]
+script = ExtResource("1_gdt2y")
 
 [node name="Room" type="TextureRect" parent="." unique_id=1931715147]
 texture_filter = 1
@@ -12,7 +15,14 @@ offset_bottom = 40.0
 texture = ExtResource("1_o5qli")
 
 [node name="TextBox" type="TextureRect" parent="." unique_id=1557282915]
+visible = false
+texture_filter = 1
+offset_right = 1024.0
+offset_bottom = 768.0
+texture = ExtResource("2_x4jx1")
+
+[node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_x4jx1")
+texture = ExtResource("3_yev5y")
