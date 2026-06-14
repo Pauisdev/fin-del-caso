@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b4h6k6qk8nc88"]
 
+[ext_resource type="Script" uid="uid://m5t5o5b4pjrk" path="res://scripts/door.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dk4u2h30u1a2" path="res://scenes/ui.tscn" id="1_o5qli"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o5qli"]
@@ -9,6 +10,7 @@ size = Vector2(50, 134)
 
 [node name="DoorRight" type="Area2D" parent="." unique_id=1177026459]
 position = Vector2(651, 358)
+script = ExtResource("1_0wfyh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorRight" unique_id=1369255729]
 position = Vector2(-3, 1)
@@ -21,3 +23,7 @@ position = Vector2(74, 568)
 polygon = PackedVector2Array(48, -164, -70, -124, -61, 195, -5, 170, 39, 127, 61, 83)
 
 [node name="Ui" parent="." unique_id=102675486 instance=ExtResource("1_o5qli")]
+unique_name_in_owner = true
+
+[connection signal="mouse_entered" from="DoorRight" to="DoorRight" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="DoorRight" to="DoorRight" method="_on_mouse_exited"]

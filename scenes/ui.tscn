@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
-[ext_resource type="Script" uid="uid://ovmhyanr4444" path="res://scenes/ui.gd" id="1_gdt2y"]
+[ext_resource type="Script" uid="uid://ovmhyanr4444" path="res://scripts/ui.gd" id="1_gdt2y"]
 [ext_resource type="Texture2D" uid="uid://ck13825668h3p" path="res://rooms/main-room.png" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
+[ext_resource type="Script" uid="uid://vv23uk5aruub" path="res://scenes/text_box.gd" id="4_8dubc"]
+[ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
+[ext_resource type="Script" uid="uid://hukr0e1hnufj" path="res://scenes/click_particles.gd" id="7_p7vwb"]
 
 [node name="Ui" type="CanvasLayer" unique_id=102675486]
 script = ExtResource("1_gdt2y")
@@ -20,9 +23,41 @@ texture_filter = 1
 offset_right = 1024.0
 offset_bottom = 768.0
 texture = ExtResource("2_x4jx1")
+script = ExtResource("4_8dubc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextBox" unique_id=580713972]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 537.0
+offset_right = 964.0
+offset_bottom = 711.0
+theme_override_fonts/normal_font = ExtResource("4_wm3ai")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Yes, it's a door.
+...
+Quite sturdy too."
 
 [node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("3_yev5y")
+
+[node name="ClickParticles" type="CPUParticles2D" parent="." unique_id=564705451]
+position = Vector2(654, 344)
+emitting = false
+amount = 24
+lifetime = 0.5
+one_shot = true
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 3.0
+initial_velocity_max = 50.0
+angular_velocity_min = 456.24
+angular_velocity_max = 456.24
+scale_amount_min = 0.0
+scale_amount_max = 5.0
+color = Color(1, 1, 1, 0.7058824)
+script = ExtResource("7_p7vwb")
