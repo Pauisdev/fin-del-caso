@@ -1,5 +1,6 @@
 use godot::prelude::*;
-mod door;
+mod click_particles;
+mod interactable;
 mod text_box;
 mod ui;
 

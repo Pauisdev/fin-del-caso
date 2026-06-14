@@ -4,9 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
-[ext_resource type="Script" uid="uid://hukr0e1hnufj" path="res://scenes/click_particles.gd" id="7_p7vwb"]
 
-[node name="Ui" type="GameUi" unique_id=1055476059]
+[node name="Ui" type="GameUi" unique_id=1007981375]
 
 [node name="Room" type="TextureRect" parent="." unique_id=1931715147]
 texture_filter = 1
@@ -14,7 +13,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_o5qli")
 
-[node name="TextBox" type="TextBox" parent="." unique_id=1588108265]
+[node name="TextBox" type="TextBox" parent="." unique_id=1735074039]
 visible = false
 texture_filter = 1
 offset_right = 1024.0
@@ -39,7 +38,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("3_yev5y")
 
-[node name="ClickParticles" type="CPUParticles2D" parent="." unique_id=564705451]
+[node name="ClickParticles" type="ClickParticle" parent="." unique_id=830264165]
 position = Vector2(654, 344)
 emitting = false
 amount = 24
@@ -54,4 +53,3 @@ angular_velocity_max = 456.24
 scale_amount_min = 0.0
 scale_amount_max = 5.0
 color = Color(1, 1, 1, 0.7058824)
-script = ExtResource("7_p7vwb")
