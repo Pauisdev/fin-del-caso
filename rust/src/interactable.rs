@@ -18,8 +18,8 @@ impl Room {
     fn to_scene_name(self) -> Option<String> {
         match self {
             Self::Nowhere => None,
-            Self::LeftRoom => Some(String::from("left_room")),
-            Self::Main => Some(String::from("main")),
+            Self::LeftRoom => Some("left_room".into()),
+            Self::Main => Some("main".into()),
         }
     }
 }
