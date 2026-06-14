@@ -1,5 +1,5 @@
 use godot::prelude::*;
-mod player;
+mod text_box;
 
 struct MyExtension;
 
