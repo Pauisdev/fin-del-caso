@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://vv23uk5aruub" path="res://scenes/text_box.gd" id="4_8dubc"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 [ext_resource type="Script" uid="uid://hukr0e1hnufj" path="res://scenes/click_particles.gd" id="7_p7vwb"]
+[ext_resource type="Texture2D" uid="uid://bnbnxup5l876c" path="res://icon.svg" id="8_ktti3"]
 
 [node name="Ui" type="CanvasLayer" unique_id=102675486]
 script = ExtResource("1_gdt2y")
@@ -59,3 +60,7 @@ scale_amount_min = 0.0
 scale_amount_max = 5.0
 color = Color(1, 1, 1, 0.7058824)
 script = ExtResource("7_p7vwb")
+
+[node name="Sprite2D" type="Player" parent="." unique_id=1642975813]
+position = Vector2(402, 290)
+texture = ExtResource("8_ktti3")
