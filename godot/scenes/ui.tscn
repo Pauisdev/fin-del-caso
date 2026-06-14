@@ -1,14 +1,12 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
-[ext_resource type="Script" uid="uid://ovmhyanr4444" path="res://scripts/ui.gd" id="1_gdt2y"]
 [ext_resource type="Texture2D" uid="uid://ck13825668h3p" path="res://rooms/main-room.png" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 [ext_resource type="Script" uid="uid://hukr0e1hnufj" path="res://scenes/click_particles.gd" id="7_p7vwb"]
 
-[node name="Ui" type="CanvasLayer" unique_id=102675486]
-script = ExtResource("1_gdt2y")
+[node name="Ui" type="GameUi" unique_id=1055476059]
 
 [node name="Room" type="TextureRect" parent="." unique_id=1931715147]
 texture_filter = 1

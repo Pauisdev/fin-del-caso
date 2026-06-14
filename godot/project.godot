@@ -23,10 +23,6 @@ window/size/mode=3
 window/stretch/mode="viewport"
 mouse_cursor/custom_image="uid://bo1k4st7w8lya"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/fgi/plugin.cfg")
-
 [input]
 
 click={

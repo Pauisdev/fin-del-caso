@@ -5,16 +5,12 @@ use godot::{classes::ITextureRect, register::GodotClass};
 
 #[derive(GodotClass)]
 #[class(init, base=TextureRect)]
-struct TextBox {
+pub struct TextBox {
     #[export]
     #[init(val = 20.0)]
     text_speed: f64,
-
-    #[init(val = None)]
     text_to_show: Option<String>,
-    #[init(val = 0.0)]
     letters_to_show: f64,
-    #[init(val = false)]
     ignored_first_click: bool,
     base: Base<TextureRect>,
 }
@@ -52,7 +48,7 @@ impl ITextureRect for TextBox {
 #[godot_api]
 impl TextBox {
     #[func]
-    fn show_text(&mut self, text: String) {
+    pub fn show_text(&mut self, text: String) {
         if self.base().is_visible() {
             return;
         }
