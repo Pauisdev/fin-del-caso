@@ -14,7 +14,7 @@ position = Vector2(651, 358)
 position = Vector2(-3, 1)
 shape = SubResource("RectangleShape2D_o5qli")
 
-[node name="DoorLeft" type="Area2D" parent="." unique_id=722958975]
+[node name="DoorLeft" type="Interactable" parent="." unique_id=1607860698]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorLeft" unique_id=1137318290]
 position = Vector2(74, 568)
