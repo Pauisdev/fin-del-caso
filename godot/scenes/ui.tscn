@@ -1,17 +1,10 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
-[ext_resource type="Texture2D" uid="uid://ck13825668h3p" path="res://rooms/main-room.png" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 
 [node name="Ui" type="GameUi" unique_id=1007981375]
-
-[node name="Room" type="TextureRect" parent="." unique_id=1931715147]
-texture_filter = 1
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_o5qli")
 
 [node name="TextBox" type="TextBox" parent="." unique_id=1735074039]
 visible = false

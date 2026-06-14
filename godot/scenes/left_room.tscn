@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://fvf6ntfhsg7f"]
+
+[ext_resource type="PackedScene" uid="uid://dk4u2h30u1a2" path="res://scenes/ui.tscn" id="1_od8eo"]
+[ext_resource type="Texture2D" uid="uid://t8cifnu5pqsc" path="res://rooms/left-side.png" id="1_r66eg"]
+
+[node name="left_room" type="Node2D" unique_id=606745350]
+
+[node name="Room" type="TextureRect" parent="." unique_id=970989120]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_r66eg")
+
+[node name="Ui" parent="." unique_id=1007981375 instance=ExtResource("1_od8eo")]

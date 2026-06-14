@@ -1,13 +1,22 @@
 [gd_scene format=3 uid="uid://b4h6k6qk8nc88"]
 
 [ext_resource type="PackedScene" uid="uid://dk4u2h30u1a2" path="res://scenes/ui.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://ck13825668h3p" path="res://rooms/main-room.png" id="2_0wfyh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o5qli"]
 size = Vector2(50, 134)
 
-[node name="Main" type="Node2D" unique_id=85164264]
+[node name="Main" type="Node2D" unique_id=1150763582]
+
+[node name="Room" type="TextureRect" parent="." unique_id=783987248]
+offset_right = 1024.0
+offset_bottom = 768.0
+texture = ExtResource("2_0wfyh")
 
 [node name="DoorRight" type="Interactable" parent="." unique_id=2130773420]
+message = "Yes, it's a door.
+...
+Quite sturdy too."
 position = Vector2(651, 358)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorRight" unique_id=1369255729]
@@ -15,10 +24,12 @@ position = Vector2(-3, 1)
 shape = SubResource("RectangleShape2D_o5qli")
 
 [node name="DoorLeft" type="Interactable" parent="." unique_id=1607860698]
+message = "This one seems to be open."
+leads_to = "LeftRoom"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorLeft" unique_id=1137318290]
 position = Vector2(74, 568)
 polygon = PackedVector2Array(48, -164, -70, -124, -61, 195, -5, 170, 39, 127, 61, 83)
 
-[node name="Ui" parent="." unique_id=102675486 instance=ExtResource("1_o5qli")]
+[node name="Ui" parent="." unique_id=1007981375 instance=ExtResource("1_o5qli")]
 unique_name_in_owner = true
