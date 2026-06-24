@@ -25,8 +25,20 @@ theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "Placeholder text."
 
+[node name="ActorName" type="RichTextLabel" parent="TextBox" unique_id=705853880]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0
+offset_top = 475.0
+offset_right = 266.0
+offset_bottom = 516.0
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_wm3ai")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "You"
+
 [node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
-visible = false
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
