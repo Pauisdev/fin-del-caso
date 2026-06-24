@@ -27,6 +27,7 @@ bbcode_enabled = true
 text = "Placeholder text."
 
 [node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
+visible = false
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
