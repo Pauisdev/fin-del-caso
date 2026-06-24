@@ -5,6 +5,9 @@
 
 [node name="Main" type="Node2D" unique_id=1150763582]
 
+[node name="Ui" parent="." unique_id=1007981375 instance=ExtResource("1_o5qli")]
+unique_name_in_owner = true
+
 [node name="Room" type="TextureRect" parent="." unique_id=783987248]
 texture_filter = 1
 offset_right = 1024.0
@@ -21,16 +24,33 @@ position = Vector2(651, 358)
 polygon = PackedVector2Array(48, -186, 202, -199, 90, 207, 3, 101)
 
 [node name="DoorLeft" type="Interactable" parent="." unique_id=1607860698]
-message = "This one seems to be open."
+message = "This one seems to lead to the kitchen.
+Should I head inside?"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorLeft" unique_id=1137318290]
 position = Vector2(538, 294)
 polygon = PackedVector2Array(82, -111, 41, -107, 34, 34, 67, 47)
 
+[node name="Armory" type="Interactable" parent="." unique_id=1619986404]
+message = "?"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Armory" unique_id=473272738]
+polygon = PackedVector2Array(417, 289, 538, 287, 538, 210, 412, 210)
+
 [node name="Plant" type="Interactable" parent="." unique_id=208833103]
+message = "Just a plant."
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Plant" unique_id=1062335290]
 polygon = PackedVector2Array(535, 374, 546, 347, 585, 335, 602, 342, 603, 421, 594, 438, 546, 436)
 
-[node name="Ui" parent="." unique_id=1007981375 instance=ExtResource("1_o5qli")]
-unique_name_in_owner = true
+[node name="Table" type="Interactable" parent="." unique_id=1495479649]
+message = "The table is empty."
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Table" unique_id=950686794]
+polygon = PackedVector2Array(362, 496, 350, 426, 377, 364, 446, 362, 450, 405, 455, 487)
+
+[node name="Couch" type="Interactable" parent="." unique_id=1966166885]
+message = "Just a normal couch."
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Couch" unique_id=1577284317]
+polygon = PackedVector2Array(396, 301, 377, 339, 378, 363, 448, 361, 451, 406, 465, 407, 458, 324, 406, 325, 405, 300)
