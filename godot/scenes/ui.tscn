@@ -39,6 +39,7 @@ bbcode_enabled = true
 text = "You"
 
 [node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
+visible = false
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
