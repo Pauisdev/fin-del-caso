@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
-[ext_resource type="Texture2D" uid="uid://bo1k4st7w8lya" path="res://cursor/cursor.png" id="4_gdt2y"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 
 [node name="Ui" type="GameUi" unique_id=1007981375]
@@ -48,8 +47,3 @@ angular_velocity_max = 456.24
 scale_amount_min = 0.0
 scale_amount_max = 5.0
 color = Color(1, 1, 1, 0.7058824)
-
-[node name="Mouse" type="Mouse" parent="." unique_id=1923502125]
-grid_size = 8
-texture_filter = 1
-texture = ExtResource("4_gdt2y")
