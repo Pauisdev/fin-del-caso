@@ -1,19 +1,17 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
-[ext_resource type="Texture2D" uid="uid://bt8b4qyw7q71m" path="res://rooms/tv-effect.png" id="3_yev5y"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 
 [node name="Ui" type="GameUi" unique_id=1007981375]
 
 [node name="TextBox" type="TextBox" parent="." unique_id=1735074039]
-visible = false
 texture_filter = 1
 offset_right = 1024.0
 offset_bottom = 768.0
 texture = ExtResource("2_x4jx1")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="TextBox" unique_id=580713972]
+[node name="Text" type="RichTextLabel" parent="TextBox" unique_id=580713972]
 texture_filter = 1
 layout_mode = 0
 offset_left = 60.0
@@ -24,6 +22,7 @@ theme_override_fonts/normal_font = ExtResource("4_wm3ai")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "Placeholder text."
+visible_characters_behavior = 1
 
 [node name="ActorName" type="RichTextLabel" parent="TextBox" unique_id=705853880]
 texture_filter = 1
@@ -37,13 +36,6 @@ theme_override_fonts/normal_font = ExtResource("4_wm3ai")
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
 text = "You"
-
-[node name="TVEffect" type="TextureRect" parent="." unique_id=2001847026]
-visible = false
-texture_filter = 1
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("3_yev5y")
 
 [node name="ClickParticles" type="ClickParticle" parent="." unique_id=830264165]
 position = Vector2(654, 344)
