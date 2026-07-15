@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="fin-del-caso"
-run/main_scene="uid://b4h6k6qk8nc88"
+run/main_scene="uid://bi4oceg0ulqmj"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SteamNetworking="*uid://hrs7k1rxtx3e"
 
 [display]
 
