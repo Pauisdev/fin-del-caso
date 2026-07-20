@@ -9,6 +9,7 @@
 unique_name_in_owner = true
 
 [node name="Room" type="TextureRect" parent="." unique_id=783987248]
+visible = false
 texture_filter = 1
 offset_right = 1024.0
 offset_bottom = 768.0
@@ -32,7 +33,7 @@ position = Vector2(538, 294)
 polygon = PackedVector2Array(82, -111, 41, -107, 34, 34, 67, 47)
 
 [node name="Armory" type="Interactable" parent="." unique_id=1619986404]
-message = "?"
+message = "Gosh, this place is a mess."
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Armory" unique_id=473272738]
 polygon = PackedVector2Array(417, 289, 538, 287, 538, 210, 412, 210)

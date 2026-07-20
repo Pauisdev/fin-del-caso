@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="fin-del-caso"
-run/main_scene="uid://bi4oceg0ulqmj"
+run/main_scene="uid://b4h6k6qk8nc88"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
