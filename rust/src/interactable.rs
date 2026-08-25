@@ -48,7 +48,8 @@ impl IArea2D for Interactable {
         let input = Input::singleton();
         if input.is_action_just_pressed("click") && self.is_mouse_on_top {
             let mut game_ui = self.base().get_node_as::<GameUi>("%Ui");
-            game_ui.bind_mut().show_text(self.message.to_string());
+            game_ui.bind_mut().character.set_visible(true);
+            game_ui.bind().show_text(self.message.to_string());
             if let Some(scene_name) = self.leads_to.to_scene_name() {
                 let scene_path = format!("res://scenes/{scene_name}.tscn");
                 self.base().get_tree().change_scene_to_file(&scene_path);

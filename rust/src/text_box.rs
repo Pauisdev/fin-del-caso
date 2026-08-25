@@ -3,6 +3,8 @@ use godot::prelude::*;
 
 use godot::{classes::ITextureRect, register::GodotClass};
 
+use crate::ui::GameUi;
+
 #[derive(GodotClass)]
 #[class(init, base=TextureRect)]
 pub struct TextBox {
