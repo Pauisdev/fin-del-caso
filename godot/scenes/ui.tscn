@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
-[ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://rooms/text-box.png" id="2_x4jx1"]
+[ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://ui/text-box.png" id="2_x4jx1"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 
 [node name="Ui" type="GameUi" unique_id=1007981375]
