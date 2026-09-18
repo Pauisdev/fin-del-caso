@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bixh5vq10w7tj" path="res://rooms/living-room-with-armory-closed.png" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dk4u2h30u1a2" path="res://scenes/ui.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://c160vqc4kyfgn" path="res://scripts/interactable.gd" id="3_sugp2"]
 
 [node name="Main" type="Node2D" unique_id=1150763582]
 
@@ -14,43 +15,48 @@ offset_right = 1024.0
 offset_bottom = 768.0
 texture = ExtResource("1_0wfyh")
 
-[node name="DoorRight" type="Interactable" parent="." unique_id=2130773420]
-message = "Yes, it's a door.
-...
-Quite sturdy too."
+[node name="DoorRight" type="Area2D" parent="." unique_id=265016330]
 position = Vector2(651, 358)
+script = ExtResource("3_sugp2")
+text = "Right door"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorRight" unique_id=1487828693]
 polygon = PackedVector2Array(48, -186, 202, -199, 90, 207, 3, 101)
 
-[node name="DoorLeft" type="Interactable" parent="." unique_id=1607860698]
-message = "This one seems to lead to the kitchen.
-Should I head inside?"
+[node name="DoorLeft" type="Area2D" parent="." unique_id=962376799]
+script = ExtResource("3_sugp2")
+text = "Left door
+multi line
+test"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DoorLeft" unique_id=1137318290]
 position = Vector2(538, 294)
 polygon = PackedVector2Array(82, -111, 41, -107, 34, 34, 67, 47)
 
-[node name="Armory" type="Interactable" parent="." unique_id=1619986404]
-message = "?"
+[node name="Armory" type="Area2D" parent="." unique_id=1627714826]
+script = ExtResource("3_sugp2")
+text = "?"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Armory" unique_id=473272738]
 polygon = PackedVector2Array(417, 289, 538, 287, 538, 210, 412, 210)
 
-[node name="Plant" type="Interactable" parent="." unique_id=208833103]
-message = "Just a plant."
+[node name="Plant" type="Area2D" parent="." unique_id=1931875677]
+script = ExtResource("3_sugp2")
+text = "Plant"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Plant" unique_id=1062335290]
 polygon = PackedVector2Array(535, 374, 546, 347, 585, 335, 602, 342, 603, 421, 594, 438, 546, 436)
 
-[node name="Table" type="Interactable" parent="." unique_id=1495479649]
-message = "The table is empty."
+[node name="Table" type="Area2D" parent="." unique_id=1517800623]
+script = ExtResource("3_sugp2")
+text = "Table"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Table" unique_id=950686794]
 polygon = PackedVector2Array(362, 496, 350, 426, 377, 364, 446, 362, 450, 405, 455, 487)
 
-[node name="Couch" type="Interactable" parent="." unique_id=1966166885]
-message = "Just a normal couch."
+[node name="Couch" type="Area2D" parent="." unique_id=374389000]
+script = ExtResource("3_sugp2")
+text = "Couch"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Couch" unique_id=1577284317]
 polygon = PackedVector2Array(396, 301, 377, 339, 378, 363, 448, 361, 451, 406, 465, 407, 458, 324, 406, 325, 405, 300)

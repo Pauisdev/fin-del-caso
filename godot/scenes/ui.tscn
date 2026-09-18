@@ -1,19 +1,24 @@
 [gd_scene format=3 uid="uid://dk4u2h30u1a2"]
 
+[ext_resource type="Script" uid="uid://drhjnoh23ccl" path="res://scripts/ui.gd" id="1_p7vwb"]
 [ext_resource type="Texture2D" uid="uid://dp47tl488p62j" path="res://ui/text-box.png" id="2_x4jx1"]
+[ext_resource type="Script" uid="uid://dktbpnxknciik" path="res://scripts/text_box.gd" id="3_cgfq5"]
 [ext_resource type="Texture2D" uid="uid://bp1j7oafmsxmh" path="res://ui/expressions/amy/default-shadow.png" id="3_gdt2y"]
 [ext_resource type="Texture2D" uid="uid://ckt6ovkoxxouv" path="res://ui/expressions/amy/default.png" id="4_8dubc"]
 [ext_resource type="FontFile" uid="uid://dar03mp1y4yje" path="res://fonts/vcr-osd-mono.ttf" id="4_wm3ai"]
 [ext_resource type="Texture2D" uid="uid://be21uidkv8nbt" path="res://ui/badges/amy.png" id="5_wm3ai"]
 [ext_resource type="Texture2D" uid="uid://bm08ipwcig3l0" path="res://ui/inventory.png" id="6_8dubc"]
+[ext_resource type="Script" uid="uid://dxmyqkx1acpsy" path="res://scripts/mouse_particles.gd" id="6_p7vwb"]
 
-[node name="Ui" type="GameUi" unique_id=1007981375]
+[node name="Ui" type="CanvasLayer" unique_id=1901409286]
+script = ExtResource("1_p7vwb")
 
-[node name="TextBox" type="TextBox" parent="." unique_id=1735074039]
+[node name="TextBox" type="TextureRect" parent="." unique_id=1160549661]
+visible = false
 texture_filter = 1
-offset_right = 1024.0
-offset_bottom = 768.0
 texture = ExtResource("2_x4jx1")
+script = ExtResource("3_cgfq5")
+text_speed = 20
 
 [node name="Text" type="RichTextLabel" parent="TextBox" unique_id=580713972]
 texture_filter = 1
@@ -29,18 +34,21 @@ text = "Placeholder text."
 visible_characters_behavior = 1
 
 [node name="Shadow" type="TextureRect" parent="." unique_id=1555713273]
+visible = false
 texture_filter = 1
 offset_right = 1024.0
 offset_bottom = 768.0
 texture = ExtResource("3_gdt2y")
 
 [node name="Character" type="TextureRect" parent="." unique_id=1076876250]
+visible = false
 texture_filter = 1
 offset_right = 1024.0
 offset_bottom = 768.0
 texture = ExtResource("4_8dubc")
 
 [node name="Badge" type="TextureRect" parent="." unique_id=854350372]
+visible = false
 texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
@@ -52,7 +60,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("6_8dubc")
 
-[node name="ClickParticles" type="ClickParticle" parent="." unique_id=830264165]
+[node name="MouseParticles" type="CPUParticles2D" parent="." unique_id=1310530586]
 position = Vector2(654, 344)
 emitting = false
 amount = 24
@@ -67,3 +75,4 @@ angular_velocity_max = 456.24
 scale_amount_min = 0.0
 scale_amount_max = 5.0
 color = Color(1, 1, 1, 0.7058824)
+script = ExtResource("6_p7vwb")
