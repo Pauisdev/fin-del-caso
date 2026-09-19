@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "characters.md",
+                "file": "story.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "characters"
+              "title": "story"
             }
           },
           {
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "characters.md",
+                "file": "story.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "characters.md",
+                "file": "story.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -195,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "characters.md",
+                "file": "story.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -222,10 +222,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "5f753cb40fe13c02",
+  "active": "248fa4ea48eda0d5",
   "lastOpenFiles": [
+    "characters.md",
     "story.md",
-    "general.md",
-    "characters.md"
+    "general.md"
   ]
 }
