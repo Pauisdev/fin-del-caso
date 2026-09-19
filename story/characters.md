@@ -16,10 +16,11 @@
 - Status: Full-time
 - Badge EX date: 9/22/2018
 - Personality: Compassionate, kind hearted, quiet
+- Extra: Will try shut down Mike and calm everyone else
 ## Mike Leonard
 - Gender: Male
 - Age: 21
 - Status: Full-time
 - Badge EX date: 11/05/2020
 - Personality: Calm, thinker, confident
-- Info: In charge of everyone
+- Extra: In charge of everyone, will treat everyone else like inferiors/scum
