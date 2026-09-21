@@ -14,10 +14,3 @@ The woman in question, (Grace Booth) was a 62 year old politician who made a lot
 - Why, a woman so important as her nobody noticed for 5 days when she died?
 ## Questions
 - What were these 'extremist' changes she had in mind?
-## Conclusions
-- The woman should have tried and defend herself with the gun
-- The son should have entered from the main door
-- The bodyguard should have not been alerted due to seeing it was his son
-
-## Post conclusions
-- The son was in good terms with her mother.
