@@ -3,3 +3,21 @@ An old woman is found dead on her bed by the police after neighbors noticed them
 
 ## Full details
 The woman in question, (Grace Booth) was a 62 year old politician who made a lot of people angry after proposing extremist changes to the country if she became president. The night before her death, she was on the main hall when she suddenly heard noise coming from her bathroom. Grace, hurried to kitchen, where she pressed a hidden button which opened a compartment on the main hall, revealing various weapons. There, she grabbed a weapon and hurried to the elevator through the secret door on the kitchen. The reason for going to the second floor was to use the phone in her room and call the police. She locked the elevator on the second floor, making it impossible for the killer to go up. After that, she hid in her room below the bed, with the gun pointing to her open door whilst hurrying to call the police. Meanwhile, the killer, realizing they couldn't call the elevator, as it was most likely blocked on 2F, made use of the fact that it was a one person elevator so the space between the walls was small, decided to climb up by grabbing the walls with both arms to their sides as well as their legs. Finally, he was able to reach the bottom of the elevator and there, open the vent, letting him climb into the elevator and onto the second floor. There, the killer, knife in hand, entered her room, expecting to find her sleeping. However, instead of that, the woman, still unable to see them clearly, due to the lights being down, took a shot and killed him. However, she soon realized this was her own son. Unable to handle having killed her own son, she decides on killing herself. However, she knows that if its found out she killed her son, her whole politician team will be seen as killers and will lose the voting. Unable to let them lose due to her own pettiness, she decides its best to hide the corpse of his son. For this, she grabs the corpse of his son and takes it to the elevator with her, there they go down to the first floor, where they both get out of the elevator, but just before doing so she presses 2F on the elevator. The elevator goes up to the second floor, while they both stay on the first floor. She lays her son on the floor, right below the elevator and finally calls the elevator to 1F. The body of her son gets crushed by the elevator as she makes its way to 2F where finally, she lays on her bed and using her prescribed sleeping pills, takes all of them, that being enough for her to die.
+
+## Problems
+- Why didn't the woman try and attack if she had a gun?
+- If it was her son, why did it try entering from behind instead of the main door and acting as if everything is okay?
+- How did he make his way to the bathroom window and not make any sound? Why was it open?
+- Why did a woman like her not have a bodyguard?
+- How did the neighbors not hear the gun shot?
+- Did the son not know about the guns?
+- Why, a woman so important as her nobody noticed for 5 days when she died?
+## Questions
+- What were these 'extremist' changes she had in mind?
+## Conclusions
+- The woman should have tried and defend herself with the gun
+- The son should have entered from the main door
+- The bodyguard should have not been alerted due to seeing it was his son
+
+## Post conclusions
+- The son was in good terms with her mother.
